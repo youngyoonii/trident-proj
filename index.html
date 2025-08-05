@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>TRIDENT: Text-Free Data Augmentation Using Image Embedding Decomposition for Domain Generalization</title>
   <link rel="icon" type="image/x-icon" href="static/images/unicorn.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -65,7 +65,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Kyung Hee Unversity<br>IEEE Access</span>
+                    <span class="author-block">Kyung Hee University<br>IEEE Access</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -81,16 +81,6 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -122,23 +112,6 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -147,7 +120,18 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Deep learning has advanced vision tasks such as classification, segmentation, and detection.
+            However, in real-world scenarios, models often encounter domains that differ from the ones seen during training, which can lead to substantial performance degradation.
+            To mitigate the effects of distribution shifts, domain generalization (DG) aims to enable models to generalize effectively to unseen target domains.
+            Recent DG approaches use generative models like diffusion models to augment data with text prompts.
+            However, these methods rely on domain-specific textual inputs and require costly fine-tuning, which limits their scalability.
+            We propose \textbf{TRIDENT}, a framework that overcomes these limitations by eliminating the need for text prompts and leveraging the linear structure of CLIP embeddings.
+            TRIDENT decomposes image embeddings into three components—domain, class, and attribute—enabling precise control over semantic content.
+            By reassembling each embedding component, we generate semantically valid and structurally coherent synthetic samples across domains. 
+            This allows efficient and diverse data synthesis without retraining diffusion models.
+            TRIDENT operates through lightweight embedding-space manipulation, significantly reducing computational overhead. 
+            Extensive experiments on standard DG benchmarks (e.g., PACS, VLCS, and OfficeHome) demonstrate that TRIDENT achieves competitive or superior performance compared with existing approaches.
+            Furthermore, qualitative evaluations and comprehensive analyses confirm that TRIDENT not only enables efficient and diverse data synthesis but also demonstrates the effectiveness of the proposed decomposition strategy.
           </p>
         </div>
       </div>
